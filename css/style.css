@@ -1,0 +1,168 @@
+ body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      color: #222;
+    }
+
+    .profile-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .main-img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .election-badge {
+      background-color: #0d6efd;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .evm-container {
+      background-color: #2f8f2f;
+      border-radius: 15px;
+      padding: 20px;
+      max-width: 600px;
+      margin: 40px auto;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      color: #fff;
+    }
+
+    .evm-header {
+      background-color: #c7e6c7;
+      border-radius: 5px;
+      padding: 8px;
+      margin-bottom: 15px;
+      text-align: center;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .evm-table {
+      width: 100%;
+      background-color: #fff;
+      color: #222;
+      border-radius: 8px;
+      overflow: hidden;
+      border-collapse: collapse;
+    }
+
+    .evm-table th,
+    .evm-table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .evm-table th {
+      background-color: #e9ecef;
+    }
+
+    .symbol-box {
+      width: 45px;
+      height: 45px;
+      background-color: #ffeb3b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      font-weight: bold;
+      color: #c00;
+      margin: 0 auto;
+    }
+
+    .vote-btn {
+      width: 70px;
+      height: 35px;
+      background-color: #2e1461;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      color: white;
+    }
+
+    .vote-btn:active {
+      background-color: #1e0b46;
+    }
+
+    .light {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: #f5c6cb;
+      margin: 0 auto;
+    }
+
+    .light.on {
+      background-color: #00ff00;
+      box-shadow: 0 0 8px #00ff00;
+    }
+
+    .evm-footer {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 0.9rem;
+      color: #fff;
+      opacity: 0.9;
+    }
+
+    .social-icons a {
+      color: #333;
+      font-size: 22px;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    /* ✅ Animated Checkmark */
+.checkmark-circle {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  display: inline-block;
+}
+.checkmark-circle .background {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #28a745;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+}
+.checkmark {
+  position: absolute;
+  left: 24px;
+  top: 20px;
+  width: 25px;
+  height: 45px;
+  border-right: 5px solid #28a745;
+  border-bottom: 5px solid #28a745;
+  transform: rotate(45deg);
+  animation: draw 0.8s ease forwards;
+}
+@keyframes draw {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    height: 45px;
+    width: 0;
+    opacity: 1;
+  }
+  100% {
+    width: 25px;
+    opacity: 1;
+  }
+}
